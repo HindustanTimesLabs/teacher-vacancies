@@ -135,7 +135,13 @@ var y = d3.scaleBand()
 var top_pad_error = y(grid[0].row);	
 var left_pad_error = x(grid[0].column);
 
-$(".chart").css("margin-left", (ww - width) / 2)
+function centerChart(){
+	var mar = ww <= breakpoint ? (ww - width) / 2 :
+		((ww / 2) - width) / 2;
+	$(".chart").css("margin-left", mar);
+}
+centerChart();
+$(window).smartresize(centerChart);
 
 redrawChart(slides[0].data, null, null);
 
@@ -176,7 +182,7 @@ function redrawChart(data, highlight, chart_label){
 	
 		var h_right_column = d3.max(h_data, function(d){ return d.column; });
 	
-	
+		var stroke_width = 4 / 2;
 		// console.log(h_top_row, h_left_column, h_bottom_row, h_right_column);
 		var point_data = [];
 	
@@ -189,7 +195,6 @@ function redrawChart(data, highlight, chart_label){
 			point_data.push({x: x(h_left_column), y: y(h_top_row)});	
 		}
 		
-	
 		// top right
 		point_data.push({x: x(h_right_column) + x.bandwidth(), y: y(h_top_row)});
 	
@@ -223,10 +228,11 @@ function redrawChart(data, highlight, chart_label){
 				.attr("y1", function(d){ return d.y; })
 				.attr("x2", function(d){ return d.x; })
 				.attr("y2", function(d){ return d.y; })
-			.transition()
-				// .delay(function(d, i){ return i * 25; })
+				.style("stroke-linecap", "butt")
+			.transition().duration(150).delay(function(d, i){ return i * 150; })
 				.attr("x2", function(d, i){ return i == point_data.length - 1 ? point_data[0].x : point_data[i + 1].x; })
-				.attr("y2", function(d, i){ return i == point_data.length - 1 ? point_data[0].y : point_data[i + 1].y; });
+				.attr("y2", function(d, i){ return i == point_data.length - 1 ? point_data[0].y : point_data[i + 1].y; })
+				.style("stroke-linecap", "square");
 	
 		var c_label = svg.selectAll(".chart-label")
 			.data([{txt: chart_label, id: jz.str.randomString()}], function(d){ return d.id; });
@@ -241,7 +247,7 @@ function redrawChart(data, highlight, chart_label){
 				.attr("class", "chart-label")
 				.attr("x", width / 2)
 				.attr("y", ext_y[0] + ((ext_y[1] - ext_y[0]) / 2))
-				.attr("dy", ww <= smallbreakpoint ? 0 : -6)
+				.attr("dy", ww <= smallbreakpoint ? 0 : -10)
 				.text(function(d){ return d.txt; })
 				.style("opacity", 1e-6)
 			.transition().delay(500)
@@ -311,7 +317,7 @@ $(".step").each(function(step_index, step){
 	  handler: function(direction) {
 	    
 	    if (direction == "down"){
-	    	
+
 	    	$(sel).removeClass("is-active");
 
 				// last slide

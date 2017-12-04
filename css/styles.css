@@ -16,6 +16,8 @@
 }
 .chart .line {
 	stroke: #000;
+	stroke-width: 4px;
+	shape-rendering: crispEdges;
 }
 .chart .cell {
 	stroke: #ccc;
