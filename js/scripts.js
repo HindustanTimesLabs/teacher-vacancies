@@ -2,7 +2,7 @@ var colors = {
 	red: "#e74c3c",
 	green: "#45b29d",
 	darkblue: "#334d5c",
-	blue: "#2880b9",
+	blue: "#48a2d7",
 	lightgrey: "#eee",
 	darkgrey: "#888",
 	lightred: "#ef8b80"
@@ -12,7 +12,7 @@ var total_posts = 64263,
 	open = 25337,
 	fulltime = total_posts - open,
 	guest = 15000,
-	vacant =  open - guest;
+	vacant = open - guest;
 
 var divisor = 100;
 
@@ -55,16 +55,23 @@ function makeData_4(){
 	return data;
 }
 
+var breakpoint = 768;
+var smallbreakpoint = 480;
+var ww = $(window).width();
+
 var currslide = 0;
 var data_arrays = [makeData_1(), makeData_2(), makeData_3(), makeData_4()];
 var texts = [
-"The Delhi public school system has 64,263 full-time teacher positions available. Each square represents 100 full-time positions.",
-"A bunch are full-time.",
-"A bunch are part time.",
-"The rest of the positions remain unfilled."
+"The Delhi public school system has room for <b>" + jz.str.numberCommas(total_posts) + "</b> full-time teachers to educate about 12.5 lakh students. Each square represents <b>" + divisor + "</b> full-time positions.",
+"Of those positions, the system actually employs <b>" + jz.str.numberCommas(fulltime) + "</b> full-time teachers. That&rsquo;s about <b>" + Math.round(fulltime / total_posts * 100) + "%</b> of the total positions.",
+"Another <b>" + jz.str.numberCommas(guest) + "</b> of the open positions have been filled with guest teachers, who work on one-year contracts. It&rsquo;s easier to become a guest teacher than a full-time one.",
+"The rest of the positions, all <b>" + jz.str.numberCommas(vacant) + "</b> of them, remain unfilled. That amounts to a <b>" + Math.round(vacant / total_posts * 100) + "%</b> shortfall."
 ];
+
+//, according to a letter sent this year from the Delhi Ministry of Education to the state&rsquo;s Lt. Gov. Anil Baijal
+
 var highlights = [colors.lightgrey, colors.blue, colors.lightred, colors.red];
-var chart_labels = ["Teaching positions", "Full-time teachers", "Part-time teachers", "Unfilled positions"];
+var chart_labels = ["Teaching positions", "Full-time teachers", "Guest teachers", "Unfilled positions"];
 
 var slides = data_arrays.map(function(d, i){
 	return {
@@ -103,7 +110,7 @@ function dataId(data){
 // elements
 
 // SETUP THE CHART
-var dim = d3.min([window.innerWidth * .85, window.innerHeight * .85]);
+var dim = d3.min([ww * .85, $(window).height() * .85]);
 var margin = {left: 1, right: 1, top: 1, bottom: 1};
 var width = dim - margin.left - margin.right;
 var height = dim - margin.top - margin.bottom;
@@ -128,9 +135,7 @@ var y = d3.scaleBand()
 var top_pad_error = y(grid[0].row);	
 var left_pad_error = x(grid[0].column);
 
-// center it
-d3.select(".chart").select("svg")
-		.attr("transform", "translate(" + ((window.innerWidth - width) / 2) + ", 0)")
+$(".chart").css("margin-left", (ww - width) / 2)
 
 redrawChart(slides[0].data, null, null);
 
@@ -236,7 +241,7 @@ function redrawChart(data, highlight, chart_label){
 				.attr("class", "chart-label")
 				.attr("x", width / 2)
 				.attr("y", ext_y[0] + ((ext_y[1] - ext_y[0]) / 2))
-				.attr("dy", -6)
+				.attr("dy", ww <= smallbreakpoint ? 0 : -6)
 				.text(function(d){ return d.txt; })
 				.style("opacity", 1e-6)
 			.transition().delay(500)
@@ -248,12 +253,12 @@ function redrawChart(data, highlight, chart_label){
 // WAYPOINTS
 var nav_height = 40;
 var chart_height = height;
-var window_height = window.innerHeight;
+var window_height = $(window).height();
 var top_listener = window_height - chart_height - ((window_height - chart_height) / 2) + (nav_height / 2);
 var step_height = chart_height - (top_pad_error * 2);
-var bottom_listener = top_listener + step_height - $(".step p").height();
+var bottom_listener = ww <= smallbreakpoint ? window_height :  top_listener + step_height - $(".step p").height();
 
-$(".step").height(step_height * 1.25)
+$(".step").height(step_height * (ww <= smallbreakpoint ? 2 : 1.25))
 
 new Waypoint({
 	element: $(".chart"),
@@ -280,13 +285,13 @@ new Waypoint({
 function makeDebugLine(pos){
 	d3.select("body").append("svg")
 		.attr("height", 2)
-		.attr("width", window.innerWidth)
+		.attr("width", ww)
 		.style("position", "fixed")
 		.style("top", pos + "px")
 	.append("line")
 		.attr("x1", 0)
 		.attr("y1", 1)
-		.attr("x2", window.innerWidth)
+		.attr("x2", ww)
 		.attr("y2", 1)
 		.style("stroke", "red")
 		.style("stroke-dasharray", "5, 5");
@@ -306,6 +311,7 @@ $(".step").each(function(step_index, step){
 	  handler: function(direction) {
 	    
 	    if (direction == "down"){
+	    	
 	    	$(sel).removeClass("is-active");
 
 				// last slide
@@ -342,7 +348,7 @@ $(".step").each(function(step_index, step){
 	  		$(sel).addClass("is-active");	
 	  		redrawChart(slides[step_index].data, slides[step_index].highlight, slides[step_index].chart_label);
 	  	} else {
-	  		$(sel).removeClass("is-active");	
+	  		$(sel).removeClass("is-active");
 	  	}
 	  }
 	});

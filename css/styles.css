@@ -1,21 +1,13 @@
-
+/*MAKE SURE THE NAVBAR GOES ON TOP*/
 .navbar {
 	z-index: 11;
 }
 
-.legend .legend-swatch {
-	height: 1em;
-	width: 1em;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 5px;
-	background: #000;
+/*CHART*/
+.chart {
+	margin: 0 auto;
+	display:table;
 }
-.legend .legend-text {
-	display: inline-block;
-	vertical-align: middle;
-}
-
 .chart.is-fixed {
 	position: fixed;
 }
@@ -33,66 +25,51 @@
 	text-anchor: middle;
 	font-family: "Open Sans", sans-serif;
 	text-shadow: -1px -1px 1px #ffffff, -1px 0px 1px #ffffff, -1px 1px 1px #ffffff, 0px -1px 1px #ffffff, 0px 1px 1px #ffffff, 1px -1px 1px #ffffff, 1px 0px 1px #ffffff, 1px 1px 1px #ffffff;
+	font-size: 2em;
 }
-.step {
+
+/*SCROLL TEXT*/
+.scroll-text {
+	width: 50%;
+  margin-left: 50%;
+}
+.scroll-text .step {
 	position: relative;
 	z-index: 10;
 	text-align: center;
 }
-.step p {
+.scroll-text .step p {
 	background: rgba(255, 255, 255, .9);
 	padding: 20px;
 	color: #ccc;
 	transition: color 1s;
 	-webkit-transition: color 1s;
+	max-width: 500px;
+  margin: auto;
+  font-size: 1.5em;
+  line-height: 1.7em;
 }
-
-.step.is-active p {
+.scroll-text .step.is-active p {
 	color: #000;
 }
 
 
-/*THIS WILL BE TURNED INTO JUST MOBILE*/
-/*#scroll {
-  position: relative;
-}
-.scroll-graphic {
-	position: absolute;
-  top: 0;
-  left: 0;
-  bottom: auto;
-  width: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-.scroll-graphic.is-fixed {
-  position: fixed;
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+	.scroll-text {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.scroll-text .step p {
+		font-size: 1.1em;
+	}	
 }
 
-.scroll-graphic.is-bottom {
-  bottom: 0;
-  top: auto;
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	.chart .chart-label {
+		font-size: 1em;
+		font-weight: bold;
+	}
 }
-
-.scroll-graphic .chart {
-  position: absolute;
-  top: 45%;
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.scroll-text {
-  padding: 0 1rem;
-  max-width: 30rem;
-}
-
-.step {
-  opacity: 0;
-  padding: 1rem;
-}
-
-.step.is-active {
-  opacity: 1;
-}*/
