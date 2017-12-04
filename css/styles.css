@@ -4,26 +4,26 @@
 }
 
 /*CHART*/
-.chart {
+#scroll .chart {
 	margin: 0 auto;
 	display:table;
 }
-.chart.is-fixed {
+#scroll .chart.is-fixed {
 	position: fixed;
 }
-.chart.is-bottom {
+#scroll .chart.is-bottom {
 	position: absolute;
 }
-.chart .line {
+#scroll .chart .line {
 	stroke: #000;
 	stroke-width: 4px;
 	shape-rendering: crispEdges;
 }
-.chart .cell {
-	stroke: #ccc;
+#scroll .chart .cell {
+	stroke: #ddd;
 	shape-rendering: crispEdges;
 }
-.chart .chart-label {
+#scroll .chart .chart-label {
 	text-anchor: middle;
 	font-family: "Open Sans", sans-serif;
 	text-shadow: -1px -1px 1px #ffffff, -1px 0px 1px #ffffff, -1px 1px 1px #ffffff, 0px -1px 1px #ffffff, 0px 1px 1px #ffffff, 1px -1px 1px #ffffff, 1px 0px 1px #ffffff, 1px 1px 1px #ffffff;
@@ -31,16 +31,16 @@
 }
 
 /*SCROLL TEXT*/
-.scroll-text {
+#scroll .scroll-text {
 	width: 50%;
   margin-left: 50%;
 }
-.scroll-text .step {
+#scroll .scroll-text .step {
 	position: relative;
 	z-index: 10;
 	text-align: center;
 }
-.scroll-text .step p {
+#scroll .scroll-text .step p {
 	background: rgba(255, 255, 255, .9);
 	padding: 20px;
 	color: #ccc;
@@ -51,26 +51,26 @@
   font-size: 1.5em;
   line-height: 1.7em;
 }
-.scroll-text .step.is-active p {
+#scroll .scroll-text .step.is-active p {
 	color: #000;
 }
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-	.scroll-text {
+	#scroll .scroll-text {
 		width: 100%;
 		margin-left: 0%;
 	}
 
-	.scroll-text .step p {
+	#scroll .scroll-text .step p {
 		font-size: 1.1em;
 	}	
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-	.chart .chart-label {
+	#scroll .chart .chart-label {
 		font-size: 1em;
 		font-weight: bold;
 	}

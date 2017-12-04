@@ -62,7 +62,7 @@ var ww = $(window).width();
 var currslide = 0;
 var data_arrays = [makeData_1(), makeData_2(), makeData_3(), makeData_4()];
 var texts = [
-"The Delhi public school system has room for <b>" + jz.str.numberCommas(total_posts) + "</b> full-time teachers to educate about 12.5 lakh students. Each square represents <b>" + divisor + "</b> full-time positions.",
+"The Delhi public school system had, as of July 31, room for <b>" + jz.str.numberCommas(total_posts) + "</b> full-time teachers to educate about 12.5 lakh students. Each square represents <b>" + divisor + "</b> full-time positions.",
 "Of those positions, the system actually employs <b>" + jz.str.numberCommas(fulltime) + "</b> full-time teachers. That&rsquo;s about <b>" + Math.round(fulltime / total_posts * 100) + "%</b> of the total positions.",
 "Another <b>" + jz.str.numberCommas(guest) + "</b> of the open positions have been filled with guest teachers, who work on one-year contracts. It&rsquo;s easier to become a guest teacher than a full-time one.",
 "The rest of the positions, all <b>" + jz.str.numberCommas(vacant) + "</b> of them, remain unfilled. That amounts to a <b>" + Math.round(vacant / total_posts * 100) + "%</b> shortfall."
@@ -84,7 +84,7 @@ var slides = data_arrays.map(function(d, i){
 
 slides.forEach(function(slide, i){
 
-	$(".scroll-text").append("<div class='step step-" + i + "'><p>" + slide.text + "</p></div>");
+	$("#scroll .scroll-text").append("<div class='step step-" + i + "'><p>" + slide.text + "</p></div>");
 
 });
 
@@ -114,7 +114,7 @@ var dim = d3.min([ww * .85, $(window).height() * .85]);
 var margin = {left: 1, right: 1, top: 1, bottom: 1};
 var width = dim - margin.left - margin.right;
 var height = dim - margin.top - margin.bottom;
-var svg = d3.select(".chart").append("svg")
+var svg = d3.select("#scroll .chart").append("svg")
 		.attr("width", width + margin.left + margin.right)
 		.attr("height", height + margin.top + margin.bottom)
 	.append("g")
@@ -138,7 +138,7 @@ var left_pad_error = x(grid[0].column);
 function centerChart(){
 	var mar = ww <= breakpoint ? (ww - width) / 2 :
 		((ww / 2) - width) / 2;
-	$(".chart").css("margin-left", mar);
+	$("#scroll .chart").css("margin-left", mar);
 }
 centerChart();
 $(window).smartresize(centerChart);
@@ -149,7 +149,7 @@ function redrawChart(data, highlight, chart_label){
 
 	var grid_data = data2grid.grid(data);
 
-	var cell = svg.selectAll(".cell")
+	var cell = svg.selectAll("#scroll .cell")
 		.data(grid_data, function(d){ return d.id; })
 
 	cell.transition()
@@ -216,7 +216,7 @@ function redrawChart(data, highlight, chart_label){
 			return d;
 		});
 	
-		var lines = svg.selectAll(".line")
+		var lines = svg.selectAll("#scroll .line")
 			.data(point_data, function(d){ return d.id; })
 	
 		lines.exit().remove();
@@ -234,7 +234,7 @@ function redrawChart(data, highlight, chart_label){
 				.attr("y2", function(d, i){ return i == point_data.length - 1 ? point_data[0].y : point_data[i + 1].y; })
 				.style("stroke-linecap", "square");
 	
-		var c_label = svg.selectAll(".chart-label")
+		var c_label = svg.selectAll("#scroll .chart-label")
 			.data([{txt: chart_label, id: jz.str.randomString()}], function(d){ return d.id; });
 	
 		c_label.exit().remove();
@@ -249,6 +249,7 @@ function redrawChart(data, highlight, chart_label){
 				.attr("y", ext_y[0] + ((ext_y[1] - ext_y[0]) / 2))
 				.attr("dy", ww <= smallbreakpoint ? 0 : -10)
 				.text(function(d){ return d.txt; })
+				// .style("fill", chart_label == "Unfilled positions" ? "#fff" : "#000")
 				.style("opacity", 1e-6)
 			.transition().delay(500)
 				.style("opacity", 1)
@@ -264,24 +265,24 @@ var top_listener = window_height - chart_height - ((window_height - chart_height
 var step_height = chart_height - (top_pad_error * 2);
 var bottom_listener = ww <= smallbreakpoint ? window_height :  top_listener + step_height - $(".step p").height();
 
-$(".step").height(step_height * (ww <= smallbreakpoint ? 2 : 1.25))
+$("#scroll .step").height(step_height * (ww <= smallbreakpoint ? 2 : 1.25))
 
 new Waypoint({
-	element: $(".chart"),
+	element: $("#scroll .chart"),
 	offset: top_listener,
 	handler: function(direction){
 
 		if (direction == "down"){
-			$(".chart")
+			$("#scroll .chart")
 				.addClass("is-fixed")
 				.css("top", top_listener);
 
-			$(".step:first-of-type").css("margin-top", $(".chart").height() + 60);
+			$("#scroll .step:first-of-type").css("margin-top", $("#scroll .chart").height() + 60);
 		} else {
-			$(".chart")
+			$("#scroll .chart")
 				.removeClass("is-fixed");
 
-			$(".step:first-of-type").css("margin-top", 60);
+			$("#scroll .step:first-of-type").css("margin-top", 60);
 
 		}
 
@@ -306,9 +307,9 @@ function makeDebugLine(pos){
 // makeDebugLine(top_listener);
 // makeDebugLine(bottom_listener);
 
-$(".step").each(function(step_index, step){
+$("#scroll .step").each(function(step_index, step){
 
-	var sel = ".step-" + step_index;
+	var sel = "#scroll .step-" + step_index;
 
 	// top waypoint
 	new Waypoint({
@@ -322,7 +323,7 @@ $(".step").each(function(step_index, step){
 
 				// last slide
 	  		if (step_index == slides.length - 1) {
-	  			$(".chart")
+	  			$("#scroll .chart")
 		  			.removeClass("is-fixed")
 		  			.addClass("is-bottom")
 		  			.css("top", $(window).scrollTop() + top_listener);
@@ -335,7 +336,7 @@ $(".step").each(function(step_index, step){
 
 	    	// last slide
 	  		if (step_index == slides.length - 1) {
-	  			$(".chart")
+	  			$("#scroll .chart")
 		  			.addClass("is-fixed")
 		  			.removeClass("is-bottom")
 		  			.css("top", top_listener);
