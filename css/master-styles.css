@@ -1,0 +1,3312 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  border: 0;
+  outline: none;
+  font-family: Open Sans, sans-serif;
+  text-decoration: none;
+/*  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;*/
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.p10 {
+  padding-top:10px !important;
+}
+img {
+  max-width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+.sprite {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/sprite.png) no-repeat 0 0;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clear {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+a, .fake {
+  color: #40a3d3;
+  text-decoration: none;
+}
+a:hover, fake:hover {
+  color: #40a3d3;
+  text-decoration: none;
+}
+.fake {
+  color: #40a3d3;
+  text-decoration: none;
+  font-size: 12px;
+}
+.fake:hover {
+  color: #40a3d3;
+  text-decoration: none;
+}
+a, h1, h2, h3, h4, h5, h6 {
+  font-family: Open Sans !important;
+}
+.storyContent P a {
+  font-family: PT Serif !important;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 23px;
+}
+.container2 {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 23px;
+}
+.containerinner {
+  padding-top: 55px;
+}
+.bgf7f5f5 {
+  background: #f7f5f5;
+}
+.header {
+  background: #000;
+  height: 55px;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+.header2 {
+  background: #000;
+  height: 55px;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+.bannerImg {
+  text-align: center;
+  position: relative;
+  background: #000;
+}
+.bannerImg img {
+  width: 100%;
+}
+.bannerContent {
+  position: absolute;
+  bottom: 30%;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  z-index: 9;
+}
+.bannerContent h1 {
+  font-family: Rokkitt !important;
+  font-size: 68px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 1px 1px 22px #000;
+}
+.bannerContent p {
+  font-family: Rokkitt !important;
+  font-size: 38px;
+  font-weight: 600;
+  text-shadow: 1px 1px 22px #000;
+  margin-top: 10px;
+}
+.logo {
+  float: left;
+  background: url(http://www.hindustantimes.com/class-of-2018/images/logo2.jpg) no-repeat 0 0;
+center;
+  width: 266px;
+  height: 55px;
+}
+.topLinks {
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 18px;
+}
+.topLinks a {
+  color: #fff;
+}
+.contentBg {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/bodybg.jpg) no-repeat 0 0;
+  min-height: 600px;
+}
+.textCenter {
+  text-align: center;
+}
+.subHead {
+  padding: 30px 100px 40px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.subHead, p {
+  font-family: PT Serif !important;
+}
+.storyArea {
+  box-shadow: 0px 10px 10px #a3a3a3;
+  min-height: 500px;
+  background: url(http://www.hindustantimes.com/class-of-2018/images/storybg.jpg);
+  margin-top: -30px;
+}
+.sechead {
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  background: #2880b9;
+  border: 3px solid #fff;
+  padding: 15px 0;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto 0;
+  position: relative;
+}
+.pos-rel {
+  position: relative;
+}
+.pos-abs {
+  position: absolute;
+}
+.mainStory img {
+  width: 100%;
+}
+.mainStory a {
+  color: #fefcfc;
+  font-size: 24px;
+  font-weight: 600;
+}
+.mainStory a h2 {
+  padding: 0 100px;
+  text-shadow: 2px 2px 20px #000;
+  margin-top: -60px;
+  font-size: 24px;
+  display: block;
+  background: url(http://www.hindustantimes.com/class-of-2018/images/descbg.png) repeat-x 0 0;
+}
+.mainStory a:hover h2 {
+  text-decoration: none;
+  color: #ccc;
+}
+.photoEssay {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/photoEssay.png) no-repeat 0 0;
+  width: 130px;
+  height: 43px;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  color: #fefcfc;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 43px;
+  padding: 0 0 0 32px;
+}
+.mb60 {
+  margin-bottom: 60px;
+}
+.mb100 {
+  margin-bottom: 85px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.substory img {
+  float: left;
+}
+.substory div {
+  top: 20px;
+  right: 70px;
+  width: 45%;
+  position: absolute;
+}
+.substory div h2 {
+  background: #f1ece1;
+  padding: 20px;
+  border: 5px solid #fff;
+  color: #3a3a3a;
+  font-size: 20px;
+}
+.substory div h2 strong {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+}
+.substory div p {
+  font-family: Georgia;
+  font-size: 18px;
+  font-weight: normal;
+  padding-left: 130px;
+  margin-top: 20px;
+  color: #666;
+}
+.substory div p strong {
+  font-size: 14px;
+  color: #0076a3;
+}
+.substory2 img {
+  float: right;
+}
+.substory2 div {
+  top: 20px;
+  left: 70px;
+  width: 45%;
+  position: absolute;
+}
+.substory2 div h2 {
+  background: #e3eef0;
+  text-align: right;
+  padding: 20px;
+  border: 5px solid #fff;
+  color: #3a3a3a;
+  font-size: 20px;
+}
+.substory2 div h2 strong {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+}
+.substory2 div p {
+  font-family: Georgia;
+  font-size: 18px;
+  font-weight: normal;
+  padding-right: 130px;
+  margin-top: 20px;
+  color: #666;
+  text-align: right;
+}
+.substory2 div p strong {
+  font-size: 14px;
+  color: #0076a3;
+}
+#video {
+  position: relative;
+  background: transparent;
+}
+.ytplayer-container {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.controlHide {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/bodybg.jpg) no-repeat 0 0;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.menuSec {
+}
+.menu ul {
+  float: right;
+}
+.menu ul li {
+  float: left;
+  font-size: 15px;
+}
+.menu ul li a {
+  color: #eee;
+  display: block;
+  padding: 0 15px;
+}
+.menu ul li a ul {
+  display: none;
+  position: absolute;
+}
+.menu ul li:hover ul {
+  display: block;
+  position: absolute;
+}
+.menu ul li:hover ul li {
+  float: left;
+  width: 125px;
+}
+.menu ul li:hover ul li a {
+  display: block;
+  background: #000;
+}
+.menu ul li:hover ul li a:hover {
+  background: #f69b0f;
+  color: #000
+}
+.menu ul li:hover a {
+  color: #fff;
+  background: url(http://www.hindustantimes.com/class-of-2018/images/hover.jpg) no-repeat bottom center;
+  transition: none;
+}
+.menu ul li.active a span {
+  color: #fff;
+  border-top: 1px solid #f69b0f;
+}
+.mobmenu {
+  border-radius: 5px;
+  display: none;
+  padding: 4px 12px 0 0;
+  float: right;
+  cursor: pointer;
+}
+.mobmenu div {
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -2px);
+  transform: rotate(45deg) translate(-4px, -2px);
+}
+.dBlock {
+  display: block !important;
+}
+.fnone {
+  float: none !important;
+}  /*#background-video{ height:550px; overflow:hidden;}*/
+.storyContent {
+  padding-bottom: 40px;
+}
+.storyContent P {
+  padding: 30px 0 0;
+  font-size: 2opx;
+  line-height: 32px;
+}
+.storyContent p img {
+  width: 100%;
+}
+.bannerTitle {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png);
+  padding: 20px;
+  position: absolute;
+  width: 550px;
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  bottom: 250px;
+  left: 100px
+}
+.bannerTitle h1 {
+  font-size: 32px;
+  line-height: 42px;
+  padding-bottom: 24px;
+  color: #fff;
+}
+.social {
+  width: 45px;
+  left: 30px
+}
+.social a {/* background:url(http://www.hindustantimes.com/class-of-2018/images/sprite.png) no-repeat 0 0;*/
+  width: 35px;
+  height: 30px;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  opacity: .8;
+  font-size: 25px;
+}
+.social a:hover {
+  opacity: 1;
+}
+.social a.facebook {
+  background-position: center 0;
+  color: #425ea2;
+}
+.social a.twitter {
+  background-position: center -53px;
+  color: #56a7e1;
+}
+.social a.linkedin {
+  background-position: center -106px;
+  color: #0067ac;
+}
+.social a.whatsapp {
+  background-position: center -212px;
+  display: none;
+  color: #55cb63;
+}
+.social a.reddit {
+  background-position: center -159px;
+  color: #ff4500;
+}
+.vertical-align-center {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+  padding: 0;
+  background: none;
+}
+.moreContent {
+  padding-bottom: 40px;
+  display: table;
+}
+.moreContent h4 {
+  padding: 0 0 20px;
+  margin: 0;
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: bold;
+}
+.moreContent img {
+  max-width: none;
+  margin-right: 15px;
+}
+.moreContent a.story {
+  border: 1px solid #707070;
+  padding: 5px 5px 3px;
+  color: #3a3a3a;
+  font-size: 16px;
+  line-height: 22px;
+  display: table;
+  width: 47%;
+  margin-bottom: 20px;
+  float: left;
+}
+.moreContent a.story:hover {
+  color: #40a3d3;
+}
+.moreContent a:first-child {
+  margin-right: 2%;
+}
+.moreContent h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
+.imgSec {
+  margin-top: 30px;
+}
+.imgSec div {
+  padding: 5px 5px 3px;
+  color: #3a3a3a;
+  display: table;
+  width: 50%;
+  margin-bottom: 0;
+  float: left;
+}
+.imgSec img {
+  width: 100%;
+  border: 1px solid #dbd9cf;
+}
+.map, .video {
+  margin-top: 30px;
+}
+.srotyWidget img {
+  max-width: none;
+  margin-right: 15px;
+}
+.srotyWidget a.story {
+  border: 1px solid #707070;
+  padding: 5px 5px 3px;
+  color: #3a3a3a;
+  font-size: 20px;
+  line-height: 20px;
+  display: table;
+  width: 99%;
+  margin-top: 30px;
+}
+.footer {
+  background: #212121;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px 0;
+}
+.copyright {
+  float: left;
+}
+.footerSocial {
+  float: right;
+}
+{
+width:25px;
+height:20px;
+float:left;
+color:#fff;
+font-size:25px;
+}
+a.fbFooter, a.twFooter {
+  width: 25px;
+  height: 20px;
+  float: left;
+  margin-left: 20px;
+  color: #fff;
+  font-size: 24px;
+}
+a.fbFooter:hover, a.twFooter:hover {
+  color: #ccc;
+}
+p.studentTxt {
+  padding: 0 100px 60px !important;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3a3a3a;
+}
+.studentSec {
+  padding-top: 0;
+}
+.studentSec h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.studentbg {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/studentbg.jpg) no-repeat center top/100%;
+  padding-top: 200px;
+}
+.wid66 {
+  float: left;
+  width: 66.66%;
+}
+.wid33 {
+  float: left;
+  width: 33.33%;
+}
+.wid50 {
+  float: left;
+  width: 47%;
+}
+.wid66 a, .wid33 a {
+  display: block;
+}
+.wid66 img, .wid33 img {
+  max-width: 100%;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+a.std1 {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/student1.jpg) no-repeat 0 0/100%;
+  height: 305px;
+  cursor: default;
+}
+a.std2 {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/student2.jpg) no-repeat 0 0/100%;
+  height: 302px;
+  cursor: default;
+}
+a.std3 {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/student3.jpg) no-repeat 0 0/100%;
+  height: 302px;
+  cursor: default;
+}
+a.std4 {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/student4.jpg) no-repeat 0 0/100%;
+  height: 627px;
+  cursor: default;
+}
+a.std5 {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/student5.jpg) no-repeat 0 0/100%;
+  height: 302px;
+  cursor: default;
+}
+a.std6 {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/student6.jpg) no-repeat 0 0/100%;
+  height: 305px;
+  cursor: default;
+}
+a.std1 span, a.std2 span, a.std3 span, a.std4 span, a.std5 span, a.std6 span {
+  display: none;
+}
+a.std1 span em, a.std2 span em, a.std3 span em, a.std4 span em, a.std5 span em, a.std6 span em {
+  font-style: normal;
+}
+a.std1:hover span, a.std2:hover span, a.std3:hover span, a.std4:hover span, a.std5:hover span, a.std6:hover span {
+  display: table;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png);
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+}
+.tabHide {
+  display: none;
+}
+.imgRes {
+  margin-top: 30px;
+}
+.imgRes img {
+  width: 100%;
+}
+.imgRes p {
+  font-family: Open Sans !important;
+  color: #666;
+  font-size: 14px !important;
+  margin: 0;
+  padding: 0 !important;
+  line-height: 16px !important;
+}
+h1 {
+  font-size: 36px;
+  color: #3a3a3a;
+  padding: 30px 0 0;
+  line-height: 40px;
+}
+h1 span {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 28px;
+  margin-top: 40px;
+}
+h2 span {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 0 0;
+  display: inline-block;
+}
+h3 {
+  font-size: 24px;
+  margin-top: 40px;
+}
+h3 span {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 0 0;
+  display: inline;
+}
+.blurb {
+  margin-left: 50px;
+  padding: 20px;
+  border-left: 6px solid #0f8ab8;
+  margin-top: 30px;
+  width: 80%;
+}
+.blurb .quote {
+  font-family: PT Serif;
+  font-size: 72px;
+  font-weight: normal;
+  color: #6699cc;
+  background-position: 0 -536px;
+  padding-top: 28px;
+}
+.blurb p {
+  font-size: 30px !important;
+  line-height: 40px !important;
+  font-weight: bold;
+  color: #333;
+  padding: 0 !important;
+  width: auto !important;
+}
+.blurb .name {
+  font-family: PT Serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #666;
+  background-position: 0 -537px;
+  font-style: italic;
+  text-align: right;
+}
+.writer, .photo {
+  color: #fff;
+  font-size: 25px;
+}
+{
+}
+.vidholder {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/mob2.jpg) no-repeat bottom center;
+  height: 610px;
+  overflow: hidden;
+  position: relative;
+}
+.dropdown-arrow {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  text-align: center;
+  margin: 0 auto;
+  bottom: -90px;
+  z-index: 9;
+  left: 45%;
+}
+.header.fixed .logo img {
+  display: none;
+}
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+background-image: /* our video */;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  z-index: 3;
+}
+i {
+  font-style: normal !important;
+}
+.fs16 {
+  font-size: 16px;
+}
+.red {
+  color: #e74c3c;
+  font-family: PT Serif !important;
+  font-size: 34px;
+}
+.mt90 {
+  margin-top: 90px !important;
+}
+.mt3 {
+  margin-top: 3px !important;
+} /*.grow img { transition: all .2s ease-in-out; } .grow:hover img { transform: scale(1.1); }*/
+.txtLeft {
+  text-align: left;
+}
+.lfttext {
+}
+.txtRight {
+  text-align: right !important;
+}
+.nobg {
+  background: none !important;
+}
+.textBg {
+  background: #e5e2e2;
+}
+.mb28 {
+  margin-bottom: 28px;
+}
+.start {
+  border: 1px solid #000;
+  color: #000;
+  font-size: 24px;
+  padding: 12px 15px;
+  width: 219px;
+  margin: 30px auto 0;
+  background: #fff;
+  text-align:center;
+}
+.monthName {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.monthTitle1 {
+  color: #fff;
+  font-size: 20px;
+  background: #c46917;
+  float: left;
+  padding: 15px 20px;
+}
+.monthTitle2 {
+  color: #fff;
+  font-size: 20px;
+  background: #1567a6;
+  float: right;
+  padding: 15px 20px;
+}
+.headLeft {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/pin-left.png) no-repeat right center;
+  padding-right: 32px;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.headRight {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/pin-right.png) no-repeat left center;
+  padding-left: 32px;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.articleLeft {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/pin-left.png) no-repeat right center;
+  padding-right: 32px;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.articleRight {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/pin-right.png) no-repeat left center;
+  padding-left: 32px;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.may {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/may.jpg) no-repeat 0 0;
+  font-size: 20px;
+}
+.june {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/june.jpg) no-repeat 0 0;
+  font-size: 20px;
+}
+.july {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/july.jpg) no-repeat 0 0;
+  font-size: 20px;
+}
+.aug {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/aug.jpg) no-repeat 0 0;
+  font-size: 20px;
+}
+.sep {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/sep.jpg) no-repeat 0 0;
+  font-size: 20px;
+}
+.oct {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/oct.jpg) no-repeat 0 0;
+  font-size: 20px;
+}
+.nov {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/nov.jpg) no-repeat 0 0;
+  font-size: 20px;
+}
+.dec {
+  background: url(http://www.hindustantimes.com/class-of-2018/images/dec.jpg) no-repeat 0 0;
+  font-size: 20px;
+}
+a span {
+  padding: 12px 15px;
+  min-height: 68px;
+  background: #ebebeb;
+  display: block;
+  float: right;
+  color: #212121;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight:600;
+}
+@media (max-width: 599px) {
+.header {
+height: 55px;
+}
+.subHead {
+padding: 20px;
+font-size: 16px;
+line-height: 22px;
+text-align: left;
+}
+.storyArea {
+box-shadow: none;
+background: none;
+margin-top: -10px !important;
+}
+.container {
+width: 100%;
+margin: 0 auto;
+}
+.mainStory img {
+height: 150px;
+}
+.mainStory a h2 {
+padding: 0 20px;
+text-shadow: none;
+margin-top: 0;
+font-size: 16px;
+display: block;
+background: none;
+color: #3a3a3a;
+text-align: left;
+}
+.substory div, .substory2 div {
+position: static;
+width: 100%;
+}
+.substory div p, .substory2 div p, .substory div h2 strong, .substory2 div h2 strong {
+display: none;
+}
+.substory img, .substory2 img {
+float: none;
+}
+.substory div h2, .substory2 div h2 {
+background: none;
+text-align: left;
+padding: 0 20px;
+border: 0;
+color: #3a3a3a;
+font-size: 16px;
+margin: 0;
+}
+.sechead {
+font-size: 16px;
+color: #fff;
+width: 230px;
+}
+.mb60 {
+margin-bottom: 30px;
+}
+.bannerImg.nobg {
+background: none !important;
+}
+.topLinks {
+margin-top: 14px;
+}
+.logo {
+width: 270px;
+margin: 0 0 0 10px;
+height: 55px;
+}
+.mobmenu {
+display: block;
+}
+.menu {
+display: none;
+position: absolute;
+width: 100%;
+z-index: 9;
+background: #000;
+top: 50px;
+left: 0;
+padding-bottom: 10px;
+}
+.menu ul {
+float: none;
+}
+.menu ul li {
+float: none;
+height: auto;
+line-height: 40px;
+}
+.container2 {
+width: 100%;
+margin: 0 auto;
+}
+.bannerTitle {
+position: static;
+background: none;
+color: #3a3a3a;
+font-size: 16px;
+width: auto;
+}
+.bannerTitle h1 {
+font-size: 24px;
+padding-bottom: 20px;
+color: #3a3a3a;
+padding-top: 0;
+line-height: 32px;
+}
+.storyContent P {
+padding: 20px 0 0;
+font-size: 16px;
+line-height: 24px;
+margin: 0 auto;
+width: 90%;
+}
+.storyContent h2 {
+margin: 30px auto 0;
+width: 90%;
+}
+.social {
+position: fixed;
+bottom: 0;
+width: 100%;
+left: 0;
+background: #fff;
+height: 32px;
+top: auto;
+padding-top: 0;
+border-top: 1px solid #ddd;
+}
+.social a {
+float: left;
+width: 20%;
+font-size: 20px;
+}
+.social a.facebook {
+background-position: center -310px;
+}
+.social a.twitter {
+background-position: center -357px;
+}
+.social a.linkedin {
+background-position: center -407px;
+}
+.social a.whatsapp {
+background-position: center -506px;
+display: block;
+}
+.social a.reddit {
+background-position: center -456px;
+}
+.moreContent {
+width: 90%;
+margin: 0 auto;
+}
+.moreContent h4 {
+font-size: 22px;
+margin-top: 30px;
+}
+.moreContent a.story, .srotyWidget a.story {
+width: 100%;
+margin-bottom: 30px;
+float: none;
+font-size: 14px;
+line-height: 16px;
+}
+.moreContent img, .srotyWidget img {
+width: 100px;
+margin-right: 10px;
+}
+.srotyWidget a.story {
+width: 98%;
+}
+.imgSec div {
+padding: 0;
+color: #3a3a3a;
+display: table;
+width: 100%;
+margin-top: 30px;
+float: none;
+}
+.imgSec img {
+width: 100%;
+border: 1px solid #dbd9cf;
+}
+.footer {
+margin-bottom: 30px;
+}
+.copyright {
+float: none;
+padding-bottom: 10px;
+font-size: 13px;
+text-align: center;
+}
+.footerSocial {
+float: none;
+margin: 0 auto;
+width: 100px;
+}
+p.studentTxt {
+padding: 0 20px 30px !important;
+font-size: 16px;
+line-height: 20px;
+}
+.studentSec {
+padding-top: 10px;
+}
+.studentSec h2 {
+font-size: 22px;
+margin-bottom: 15px;
+}
+.studentbg {
+padding-top: 50px;
+}
+.wid66, .wid33, .wid50 {
+float: none;
+width: 100%;
+}
+.mr20 {
+margin-right: 0;
+}
+a.std1 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student1.jpg) no-repeat 0 0;
+height: 260px;
+background-position: -120px 0;
+position: relative;
+}
+a.std2 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student2.jpg) no-repeat 0 0 /100%;
+height: 260px;
+background-position: center center;
+position: relative;
+}
+a.std3 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student3.jpg) no-repeat 0 0 /100%;
+height: 260px;
+margin-bottom: 20px;
+background-position: 0 0;
+position: relative;
+}
+a.std4 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student4.jpg) no-repeat 0 0 /100%;
+height: 260px;
+background-position: center center;
+position: relative;
+}
+a.std5 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student5.jpg) no-repeat 0 0 /100%;
+height: 260px;
+margin-bottom: 20px;
+background-position: 0 0;
+position: relative;
+}
+a.std6 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student6.jpg) no-repeat 0 0;
+height: 260px;
+background-position: -270px -81px;
+position: relative;
+}
+a.std1 span, a.std2 span, a.std3 span, a.std4 span, a.std5 span, a.std6 span, a.std1:hover span, a.std2:hover span, a.std3:hover span, a.std4:hover span, a.std5:hover span, a.std6:hover span {
+display: table;
+text-align: center;
+color: #fff;
+text-decoration: none;
+background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png);
+width: 100%;
+height: 80px;
+position: absolute;
+bottom: 0;
+font-size: 14px;
+}
+a.std1 span em, a.std2 span em, a.std3 span em, a.std4 span em, a.std5 span em, a.std6 span em {
+font-style: normal;
+line-height: 22px;
+}
+a.std1 span em i, a.std2 span em i, a.std3 span em i, a.std4 span em i, a.std5 span em i, a.std6 span em i {
+display: none;
+}
+.blurb {
+margin-left: 30px;
+padding: 15px;
+}
+.blurb p {
+font-size: 20px !important;
+line-height: 30px !important;
+}
+.blurb .name {
+font-size: 16px;
+}
+h1 {
+font-size: 30px;
+line-height: 36px;
+}
+h1 span {
+display: block;
+font-size: 16px;
+font-weight: normal;
+}
+h2 {
+font-size: 22px;
+margin-top: 40px;
+}
+.writer, .photo {
+font-size: 18px;
+color: #000;
+}
+.mb100 {
+margin-bottom: 60px;
+}
+video {
+display: none;
+}
+.vidholder {
+height: 480px;
+overflow: hidden;
+background-position: center center;
+}
+.bannerContent h1 {
+font-size: 40px;
+text-shadow: 1px 1px 2px #000;
+}
+.bannerContent p {
+font-size: 24px;
+padding: 5px 30px 10px;
+margin: 0;
+text-shadow: 1px 1px 10px #000;
+}
+.menu ul li:hover a {
+background-image: none;
+}
+.red {
+font-size: 24px;
+}
+#disqus_thread {
+margin: 0 auto;
+width: 90%;
+}
+.containerNew {
+background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png) repeat-y center top;
+width: 100%;
+margin: 52px auto 0;
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img25, .img26, .img27, .img28, .img29, .img30, .img31, .img32 {
+width: 320px;
+height: 250px;
+float: none;
+margin: 0 auto;
+z-index:999;
+}
+.img1txt, .img2txt, .img3txt, .img4txt, .img5txt, .img6txt, .img7txt, .img8txt, .img9txt, .img10txt, .img11txt, .img12txt, .img13txt, .img14txt, .img15txt, .img16txt, .img17txt, .img18txt, .img19txt, .img20txt , .img21txt, .img22txt, .img23txt, .img24txt, .img24txt, .img25txt, .img26txt, .img27txt, .img28txt, .img29txt, .img30txt, .img31txt, .img32txt{
+width: 320px;
+height: auto;
+float: none;
+margin: 0 auto 28px;
+text-align: left !important;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.articleLeft, .articleRight {
+background: none;
+padding: 0;
+width: auto;
+float: none;
+position: static;
+display: block;
+text-align: left;
+}
+.img1 {
+background-position: 0 -97px;
+background-size:cover;
+}
+.img2 {
+background-position: 0px -307px;
+background-size:cover;
+}
+.img3 {
+background-position: 0 -592px;
+background-size:cover;
+}
+.img4 {
+margin-top: 0;
+background-position: 0 -844px;
+background-size:cover;
+}
+.img5 {
+background-position: 0 -42px;
+}
+.img6 {
+background-position: -83px -558px;
+}
+.img7 {
+margin-top: 0;
+background-position: -73px -982px;
+}
+.img8 {
+background-position: -110px -1363px;
+}
+.img9 {
+background-position: -100px -42px;
+}
+.img10 {
+background-position: -83px -460px;
+}
+.img11 {
+margin-top: 0;
+background-position: -73px -915px;
+}
+.img12 {
+background-position: -110px -1328px;
+}
+.img13 {
+background-position: -67px -87px;
+}
+.img14 {
+background-position: -83px -580px;
+}
+.img15 {
+margin-top: 0;
+background-position: -120px -865px;
+}
+.img16 {
+background-position: -110px -1427px;
+}
+.img17 {
+background-position: 0 0;
+background-size:cover;
+}
+.img18 {
+background-position: 0px -295px;
+background-size:cover;
+}
+.img19 {
+background-position: 0 -592px;
+background-size:cover;
+}
+.img20 {
+margin-top: 0;
+background-position: 0 -844px;
+background-size:cover;
+}
+.img21 {
+background-position: 0 0;
+background-size:cover;
+}
+.img22 {
+background-position: 0px -295px;
+background-size:cover;
+}
+.img23 {
+background-position: 0 -555px;
+background-size:cover;
+}
+.img24 {
+margin-top: 0;
+background-position: 0 -844px;
+background-size:cover;
+}
+.img25 {
+background-position: 0 0;
+background-size:cover;
+}
+.img26 {
+background-position: 0px -295px;
+background-size:cover;
+}
+.img27 {
+background-position: 0 -555px;
+background-size:cover;
+}
+.img28 {
+margin-top: 0;
+background-position: 0 -844px;
+background-size:cover;
+}
+.img29 {
+background-position: 0 0;
+background-size:cover;
+}
+.img30 {
+background-position: 0px -295px;
+background-size:cover;
+}
+.img31 {
+background-position: 0 -555px;
+background-size:cover;
+}
+.img32 {
+margin-top: 0;
+background-position: 0 -844px;
+background-size:cover;
+}
+.time-line-list li {
+position: relative !important;
+padding: 0px 0px 10px 2px !important;
+float: left !important;
+width: 2% !important;
+box-sizing: border-box !important;
+}
+.time-line-list li .circle-bx-solid {
+position: absolute;
+left: 1.3% !important;
+bottom: -51px;
+width: 10px;
+height: 10px;
+background: #464646;
+border: 2px solid #464646;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+-ms-border-radius: 100%;
+border-radius: 100%;
+}
+.time-line-list li .post-date {
+position: absolute;
+left: -36% !important;
+top: -3px !important;
+width: 20% !important;
+height: 20px !important;
+font-size: .800em !important;
+display:none;
+}
+.time-line-list li .post-date a {
+display:block;
+color: #666666;
+text-decoration:none;
+}
+.time-line-list li .post-date a:hover {
+color: #40a3d3;
+}
+.story-month {
+display:block !important;
+font-size: .800em !important;
+}
+.story-month a {
+color: #329e89;
+font-size: 1em !important;
+font-weight: 700;
+text-decoration: none;
+}
+.time-line-list li .text-head {
+position: absolute;
+left:-1px !important;
+top: 79px !important;
+width: 20% !important;
+font-size: .800em !important;
+color: #666666;
+font-weight: 600;
+text-align: center;
+display:none;
+}
+.time-line-list li .text-head a {
+color: #666666;
+text-decoration:none;
+}
+.time-line-list li .text-head a:hover {
+color: #40a3d3;
+}
+.selected-arrow-gr {
+left: 68% !important;
+top: 66px !important;
+height: 16px !important;
+}
+.time-line-list li .current-month {
+position: absolute;
+left: 12.3% !important;
+bottom: -56px;
+width: 20px;
+height: 20px;
+background: #e9eef1;
+border: 2px solid #329e89;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+-ms-border-radius: 100%;
+border-radius: 100%;
+}
+.blk-arrow-top {
+left: 25% !important;
+}
+.blk-arrow-btm {
+left: 25% !important;
+top: 61px !important;
+}
+.headRight, .headLeft {
+background: #fff !important;
+background-image:none;
+padding-left: 0;
+padding-right: 0;
+width: 100%;
+float: none;
+position: relative;
+text-align:center !important;
+}
+.monthTitle1, .monthTitle2 {
+float:none;
+width:320px;
+margin:0 auto;
+text-align:center;
+}
+.headRight.nobg {
+background-color:#fff;
+}
+.Artimg4 {
+padding-bottom:75px;
+}
+.Artimg5 {
+margin-top:100px;
+}
+#may-story {
+margin-top:-175px;
+}
+.time-line-list .selected-arrow-top {
+left:57%;
+}
+.pt70 {
+padding-top:70px;
+}
+.mt-180 {
+margin-top:-180px;
+}
+}
+@media (max-width:414px) {
+.time-line-list li .current-month {
+left: 11.3% !important;
+}
+.blk-arrow-top {
+left: 22% !important;
+}
+.selected-arrow-gr {
+left: 58% !important;
+}
+.time-line-list .selected-arrow-top {
+left:57%;
+}
+.pt70 {
+padding-top:70px;
+}
+.mt-180 {
+margin-top:-180px;
+}
+}
+@media (min-width: 600px) and (max-width: 767px) {
+.header {
+height: auto;
+}
+.subHead {
+padding: 20px;
+font-size: 16px;
+line-height: 22px;
+text-align: left;
+}
+.storyArea {
+box-shadow: none;
+background: none;
+margin-top: -10px !important;
+}
+.container {
+width: 100%;
+margin: 0 auto;
+}
+.mainStory img {
+height: 150px;
+}
+.mainStory a h2 {
+padding: 0 20px;
+text-shadow: none;
+margin-top: 0;
+font-size: 16px;
+display: block;
+background: none;
+color: #3a3a3a;
+text-align: left;
+}
+.substory div, .substory2 div {
+position: static;
+width: 100%;
+}
+.substory div p, .substory2 div p, .substory div h2 strong, .substory2 div h2 strong {
+display: none;
+}
+.substory img, .substory2 img {
+float: none;
+}
+.substory div h2, .substory2 div h2 {
+background: none;
+text-align: left;
+padding: 0 20px;
+border: 0;
+color: #3a3a3a;
+font-size: 16px;
+}
+.sechead {
+font-size: 16px;
+color: #fff;
+width: 230px;
+}
+.mb60 {
+margin-bottom: 30px;
+}
+.nobg {
+background: none;
+}
+.topLinks {
+margin-top: 14px;
+}
+.logo {
+width: 85%;
+}
+.mobmenu {
+display: block;
+}
+.menu {
+display: none;
+position: absolute;
+width: 100%;
+z-index: 9;
+background: #000;
+top: 50px;
+left: 0;
+}
+.menu ul {
+float: none;
+}
+.menu ul li {
+float: none;
+height: auto;
+line-height: 40px;
+}
+.container2 {
+width: 100%;
+margin: 0 auto;
+}
+.bannerTitle {
+position: static;
+background: none;
+color: #3a3a3a;
+font-size: 16px;
+width: auto;
+width: 90%;
+margin: 0 auto;
+padding-left: 0;
+padding-right: 0;
+}
+.bannerTitle h1 {
+font-size: 24px;
+padding-bottom: 20px;
+color: #3a3a3a;
+padding-top: 0;
+}
+.storyContent P {
+padding: 20px 0 0;
+font-size: 16px;
+width: 90%;
+line-height: 24px;
+margin: 0 auto;
+}
+.storyContent h2 {
+width: 90%;
+margin: 30px auto 0;
+}
+.social {
+position: fixed;
+bottom: 0;
+text-align: center;
+width: 100%;
+left: 0;
+background: #fff;
+height: 32px;
+top: auto;
+padding-top: 0;
+border-top: 1px solid #ddd;
+}
+.social a {
+float: left;
+width: 20%;
+font-size: 20px;
+}
+.social a.facebook {
+background-position: center -310px;
+}
+.social a.twitter {
+background-position: center -357px;
+}
+.social a.linkedin {
+background-position: center -407px;
+}
+.social a.whatsapp {
+background-position: center -506px;
+display: block;
+}
+.social a.reddit {
+background-position: center -456px;
+}
+.moreContent a.story, .srotyWidget a.story {
+width: 100%;
+margin-bottom: 30px;
+float: none;
+}
+.footer {
+margin-bottom: 30px;
+}
+p.studentTxt {
+padding: 0 20px 30px !important;
+font-size: 16px;
+line-height: 20px;
+}
+.studentSec {
+padding-top: 10px;
+}
+.studentSec h2 {
+font-size: 22px;
+margin-bottom: 15px;
+}
+.studentbg {
+padding-top: 50px;
+}
+.wid66, .wid33, .wid50 {
+float: none;
+width: 100%;
+}
+.mr20 {
+margin-right: 0;
+}
+a.std1 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student1.jpg) no-repeat 0 0/100% 100%;
+height: 260px;
+background-position: 0 0;
+position: relative;
+}
+a.std2 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student2.jpg) no-repeat 0 0 /100%;
+height: 260px;
+background-position: center center;
+position: relative;
+}
+a.std3 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student3.jpg) no-repeat 0 0 /100%;
+height: 260px;
+margin-bottom: 20px;
+background-position: 0 0;
+position: relative;
+}
+a.std4 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student4.jpg) no-repeat 0 0 /100%;
+height: 260px;
+background-position: center center;
+position: relative;
+}
+a.std5 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student5.jpg) no-repeat 0 0 /100%;
+height: 260px;
+margin-bottom: 20px;
+background-position: 0 0;
+position: relative;
+}
+a.std6 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student6.jpg) no-repeat 0 0/100% 100%;
+height: 260px;
+background-position: 0 0;
+position: relative;
+}
+a.std1 span, a.std2 span, a.std3 span, a.std4 span, a.std5 span, a.std6 span, a.std1:hover span, a.std2:hover span, a.std3:hover span, a.std4:hover span, a.std5:hover span, a.std6:hover span {
+display: table;
+text-align: center;
+color: #fff;
+text-decoration: none;
+background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png);
+width: 100%;
+height: 80px;
+position: absolute;
+bottom: 0;
+font-size: 14px;
+}
+a.std1 span em, a.std2 span em, a.std3 span em, a.std4 span em, a.std5 span em, a.std6 span em {
+font-style: normal;
+line-height: 17px;
+}
+.blurb {
+margin-left: 30px;
+padding: 15px;
+}
+.blurb p {
+font-size: 20px !important;
+line-height: 30px !important;
+}
+.blurb .name {
+font-size: 16px;
+}
+.writer, .photo {
+font-size: 18px;
+color: #000;
+}
+video {
+display: none;
+}
+.vidholder {
+height: 480px;
+overflow: hidden;
+background-position: center center;
+}
+.red {
+font-size: 24px;
+}
+.moreContent, #disqus_thread {
+width: 90%;
+margin: 0 auto;
+}
+.moreContent h4 {
+margin-top: 30px;
+}
+.containerNew {
+background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png) repeat-y center top;
+width: 100%;
+margin: 52px auto 0;
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img24, .img25, .img26, .img27, .img28, .img28, .img29, .img30, .img31, .img32 {
+width: 480px;
+height: 270px;
+float: none;
+margin: 0 auto;
+}
+.img1txt, .img2txt, .img3txt, .img4txt, .img5txt, .img6txt, .img7txt, .img8txt, .img9txt, .img10txt, .img11txt, .img12txt, .img13txt, .img14txt, .img15txt, .img16txt, .img17txt, .img18txt, .img19txt, .img20txt, .img21txt, .img22txt, .img23txt, .img24txt, .img24txt, .img25txt, .img26txt, .img27txt, .img28txt, .img29txt, .img30txt, .img31txt, .img32txt {
+width: 480px;
+height: auto;
+float: none;
+margin: 0 auto 28px;
+text-align: left !important;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.articleLeft, .articleRight {
+background: none;
+padding: 0;
+width: auto;
+float: none;
+position: static;
+display: block;
+text-align: left;
+}
+.img1 {
+background-position: 0px -94px;
+}
+.img2 {
+background-position: 0px -461px;
+}
+.img3 {
+background-position:0 -874px;
+}
+.img4 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.img5 {
+background-position: 0 -42px;
+}
+.img6 {
+background-position: 0 -515px;
+}
+.img7 {
+margin-top: 0;
+background-position: 0 -951px;
+}
+.img8 {
+background-position: 0 -1363px;
+}
+.img9 {
+background-position: 0 -42px;
+}
+.img10 {
+background-position: 0 -480px;
+}
+.img11 {
+margin-top: 0;
+background-position: 0 -915px;
+}
+.img12 {
+background-position: 0 -1321px;
+}
+.img13 {
+background-position: 0 -60px;
+}
+.img14 {
+background-position: 0 -568px;
+}
+.img15 {
+margin-top: 0;
+background-position: 0 -866px;
+}
+.img16 {
+background-position: 0 -1393px;
+}
+.img17 {
+background-position: 0px -55px;
+}
+.img18 {
+background-position: 0px -461px;
+}
+.img19 {
+background-position:0 -874px;
+}
+.img20 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.img21 {
+background-position: 0px -55px;
+}
+.img22 {
+background-position: 0px -461px;
+}
+.img23 {
+background-position:0 -841px;
+}
+.img24 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.img25 {
+background-position: 0px -55px;
+}
+.img26 {
+background-position: 0px -461px;
+}
+.img27 {
+background-position:0 -841px;
+}
+.img28 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.img29 {
+background-position: 0px -55px;
+}
+.img30 {
+background-position: 0px -565px;
+}
+.img31 {
+background-position:0 -948px;
+}
+.img32 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+}
+@media (min-width: 970px) {
+.time-line-list li .current-month {
+position: absolute !important;
+left: 14.3% !important;
+}
+}
+@media (min-width: 768px) {
+.subHead {
+padding: 30px 0 40px;
+font-size: 20px;
+}
+.mainStory a h2 {
+padding: 0 20px;
+font-size: 20px;
+line-height: 20px;
+}
+.substory img, .substory2 img {
+width: 60%;
+}
+.substory div p, .substory2 div p, .substory div h2 strong, .substory2 div h2 strong {
+display: none;
+}
+.substory div h2, .substory2 div h2 {
+font-size: 20px;
+line-height: 24px;
+padding: 10px;
+}
+.social {
+top: 100px;
+width: 45px;
+left: 8px
+}
+.storyContent P {
+padding: 20px 0 0;
+font-size: 18px;
+line-height: 26px;
+}
+.bannerTitle {
+width: 350px;
+bottom: 100px;
+left: 50px;
+font-size: 14px;
+}
+.bannerTitle h1 {
+font-size: 20px;
+padding-bottom: 20px;
+padding-top: 0;
+line-height: 26px !important;
+}
+.moreContent a.story {
+width: 100%;
+margin-bottom: 30px;
+float: none;
+}
+.social a.whatsapp {
+display: block;
+}
+p.studentTxt {
+padding: 0 60px 30px !important;
+font-size: 20px;
+line-height: 24px;
+}
+.studentSec {
+padding-top: 10px;
+}
+.studentSec h2 {
+font-size: 30px;
+margin-bottom: 20px;
+}
+.studentbg {
+padding-top: 50px;
+}
+.wid66, .wid33, .wid50 {
+float: left;
+width: 50%;
+}
+.mr20 {
+margin-right: 0;
+}
+a.std1 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student1.jpg) no-repeat 0 0/100% 100%;
+height: 260px;
+background-position: 0 0;
+position: relative;
+}
+a.std2 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student2.jpg) no-repeat 0 0 /100%;
+height: 260px;
+background-position: center center;
+position: relative;
+}
+a.std3 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student3.jpg) no-repeat 0 0 /100%;
+height: 260px;
+margin-bottom: 20px;
+background-position: 0 0;
+position: relative;
+}
+a.std4 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student4.jpg) no-repeat 0 0 /100%;
+height: 260px;
+background-position: center center;
+position: relative;
+}
+a.std5 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student5.jpg) no-repeat 0 0 /100%;
+height: 260px;
+margin-bottom: 20px;
+background-position: 0 0;
+position: relative;
+}
+a.std6 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student6.jpg) no-repeat 0 0/100% 100%;
+height: 260px;
+background-position: 0 0;
+position: relative;
+}
+a.std1 span, a.std2 span, a.std3 span, a.std4 span, a.std5 span, a.std6 span, a.std1:hover span, a.std2:hover span, a.std3:hover span, a.std4:hover span, a.std5:hover span, a.std6:hover span {
+display: table;
+text-align: center;
+color: #fff;
+text-decoration: none;
+background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png);
+width: 100%;
+height: 80px;
+position: absolute;
+bottom: 0;
+font-size: 14px;
+padding: 0 20px;
+}
+a.std1 span em, a.std2 span em, a.std3 span em, a.std4 span em, a.std5 span em, a.std6 span em {
+font-style: normal;
+line-height: 22px;
+}
+.tabShow {
+display: block;
+}
+.blurb {
+margin-left: 30px;
+padding: 15px;
+}
+.blurb p {
+font-size: 24px !important;
+line-height: 32px !important;
+}
+.blurb .name {
+font-size: 18px;
+}
+.writer, .photo {
+font-size: 18px;
+color: #fff;
+}
+video {
+display: none;
+}
+.vidholder {
+height: 480px;
+overflow: hidden;
+background-position: center center;
+}
+.moreContent, #disqus_thread {
+width: 90%;
+margin: 0 auto;
+}
+.containerNew {
+background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png) repeat-y center top;
+width: 100%;
+margin: 52px auto 0;
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18, .img19, .img20, .img21, .img22, .img23, .img24, .img24, .img25, .img26, .img27, .img28, .img28, .img29, .img30, .img31, .img32 {
+width: 480px;
+height: 270px;
+float: none;
+margin: 0 auto;
+}
+.img1txt, .img2txt, .img3txt, .img4txt, .img5txt, .img6txt, .img7txt, .img8txt, .img9txt, .img10txt, .img11txt, .img12txt, .img13txt, .img14txt, .img15txt, .img16txt, .img17txt, .img18txt, .img19txt, .img20txt, .img21txt, .img22txt, .img23txt, .img24txt, .img25txt, .img26txt, .img27txt, .img28txt, .img29txt, .img30txt, .img31txt, .img32txt {
+width: 480px;
+height: auto;
+float: none;
+margin: 0 auto 28px;
+text-align: left !important;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.articleLeft, .articleRight {
+background: none;
+padding: 0;
+width: auto;
+float: none;
+position: static;
+display: block;
+text-align: left;
+}
+.img1 {
+background-position: 0px -94px;
+}
+.img2 {
+background-position: 0px -461px;
+}
+.img3 {
+background-position:0 -874px;
+}
+.img4 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.img5 {
+background-position: 0 -42px;
+}
+.img6 {
+background-position: 0 -515px;
+}
+.img7 {
+margin-top: 0;
+background-position: 0 -951px;
+}
+.img8 {
+background-position: 0 -1363px;
+}
+.img9 {
+background-position: 0 -42px;
+}
+.img10 {
+background-position: 0 -480px;
+}
+.img11 {
+margin-top: 0;
+background-position: 0 -915px;
+}
+.img12 {
+background-position: 0 -1321px;
+}
+.img13 {
+background-position: 0 -60px;
+}
+.img14 {
+background-position: 0 -568px;
+}
+.img15 {
+margin-top: 0;
+background-position: 0 -866px;
+}
+.img16 {
+background-position: 0 -1393px;
+}
+.img17 {
+background-position: 0px -55px;
+}
+.img18 {
+background-position: 0px -461px;
+}
+.img19 {
+background-position:0 -874px;
+}
+.img20 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.img21 {
+background-position: 0px -55px;
+}
+.img22 {
+background-position: 0px -461px;
+}
+.img23 {
+background-position:0 -841px;
+}
+.img24 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.img25 {
+background-position: 0px -55px;
+}
+.img26 {
+background-position: 0px -461px;
+}
+.img27 {
+background-position:0 -841px;
+}
+.img28 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.img29 {
+background-position: 0px -55px;
+}
+.img30 {
+background-position: 0px -565px;
+}
+.img31 {
+background-position:0 -948px;
+}
+.img32 {
+margin-top: 0;
+background-position:0 -1314px;
+}
+.time-line-list li {
+position: relative;
+padding: 0px 0px 10px 10% !important;
+margin-left: 1% !important;
+float: left;
+width: 0;
+}
+.selected-arrow-gr {
+left: 23% !important;
+}
+.blk-arrow-top {
+left: 21.8% !important;
+}
+.blk-arrow-btm {
+left: 21.8% !important;
+}
+}
+@media (min-width: 1024px) {
+.substory div p, .substory2 div p, .substory div h2 strong, .substory2 div h2 strong {
+display: block;
+line-height: 20px;
+margin-top: 10px;
+}
+.social a.whatsapp {
+display: none;
+}
+.social {
+left: 15px
+}
+.storyContent P {
+padding: 20px 0 0;
+font-size: 18px;
+line-height: 26px;
+}
+.bannerTitle {
+width: 400px;
+bottom: 100px;
+left: 100px;
+font-size: 16px;
+}
+.bannerTitle h1 {
+font-size: 24px;
+padding-bottom: 20px;
+line-height: 33px;
+line-height: 42px !important;
+}
+.bannerImg.nobg {
+background: none !important;
+}
+p.studentTxt, .storyContent P {
+width: 768px;
+margin: 0 auto;
+}
+.storyContent {
+width: 900px;
+margin: 0 auto;
+}
+.storyContent h2 {
+width: 768px;
+margin: 30px auto 0;
+}
+.moreContent a.story {
+width: 47%;
+margin-bottom: 20px;
+float: left;
+}
+.blurb {
+margin: 30px auto 0;
+padding: 20px;
+width: 700px;
+}
+.blurb p {
+font-size: 30px !important;
+line-height: 40px !important;
+}
+.blurb .name {
+font-size: 20px;
+}
+.writer, .photo {
+font-size: 18px;
+color: #fff;
+}
+.imgRes {
+width: 900px;
+margin: 30px auto 0;
+}
+.imgRes p {
+width: auto;
+}
+video {
+display: block;
+}
+.vidholder {
+background: url(http://www.hindustantimes.com/class-of-2018/images/mob2.jpg) no-repeat bottom center;
+height: 610px;
+overflow: hidden;
+position: relative;
+margin-top: 55px;
+}
+.moreContent, #disqus_thread {
+width: 900px;
+margin: 30px auto 0;
+}
+.containerNew {
+background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png) repeat-y center top;
+width: 1000px;
+margin: 52px auto 0;
+min-height: 600px;
+}
+.articleLeft {
+background: url(http://www.hindustantimes.com/class-of-2018/images/pin-left.png) no-repeat right 50%;
+padding-right: 32px;
+width: 50%;
+float: left;
+position: relative;
+}
+.articleRight {
+background: url(http://www.hindustantimes.com/class-of-2018/images/pin-right.png) no-repeat left 50%;
+padding-left: 32px;
+width: 50%;
+float: left;
+position: relative;
+}
+.Artimg1 {
+background-position: right 180px;
+}
+.Artimg2 {
+background-position: left 135px;
+}
+.Artimg3 {
+background-position: right 155px;
+}
+.Artimg4 {
+background-position: left 120px;
+}
+.Artimg5 {
+background-position: right 150px;
+}
+.Artimg6 {
+background-position: left 220px;
+}
+.Artimg7 {
+background-position: right 100px;
+}
+.Artimg8 {
+background-position: left 165px;
+}
+.Artimg9 {
+background-position: right 150px;
+}
+.img1 {
+width: 341px;
+height: 341px;
+float: right;
+background-position: -95px -28px;
+}
+.img1txt {
+width: 341px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img2 {
+width: 452px;
+height: 255px;
+float: left;
+background-position: 0px -454px;
+background-size:cover;
+}
+.img2txt {
+width: 452px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img3 {
+width: 470px;
+height: 270px;
+float: right;
+background-position: 0 -878px;
+}
+.img3txt {
+width: 470px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img4 {
+width: 360px;
+height: 373px;
+float: left;
+margin-top: -99px;
+background-position: -54px -1278px;
+}
+.img4txt {
+width: 360px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img5 {
+width: 440px;
+height: 289px;
+float: right;
+background-position: 0 0;
+}
+.img5txt {
+width: 440px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img6 {
+width: 333px;
+height: 420px;
+float: left;
+background-position: -110px -420px;
+}
+.img6txt {
+width: 333px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img7 {
+width: 333px;
+height: 420px;
+float: right;
+margin-top: -124px;
+background-position: -65px -840px;
+}
+.img7txt {
+width: 333px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img8 {
+width: 470px;
+height: 293px;
+float: left;
+background-position: 0 -1363px;
+}
+.img8txt {
+width: 470px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img9 {
+width: 440px;
+height: 289px;
+float: right;
+background-position: 0 0;
+}
+.img9txt {
+width: 440px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img10 {
+width: 333px;
+height: 420px;
+float: left;
+background-position: -54px -420px;
+}
+.img10txt {
+width: 333px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img11 {
+width: 333px;
+height: 420px;
+float: right;
+margin-top: -124px;
+background-position: -65px -840px;
+}
+.img11txt {
+width: 333px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img12 {
+width: 470px;
+height: 293px;
+float: left;
+background-position: 0 -1329px;
+}
+.img12txt {
+width: 470px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img13 {
+width: 440px;
+height: 289px;
+float: right;
+background-position:-29px -47px;
+}
+.img13txt {
+width: 440px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img14 {
+width: 333px;
+height: 420px;
+float: left;
+background-position: -54px -420px;
+}
+.img14txt {
+width: 333px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img15 {
+width: 333px;
+height: 420px;
+float: right;
+margin-top: -124px;
+background-position: -145px -840px;
+}
+.img15txt {
+width: 333px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img16 {
+width: 470px;
+height: 293px;
+float: left;
+background-position: 0 -1329px;
+}
+.img16txt {
+width: 470px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img17 {
+width: 341px;
+height: 341px;
+float: right;
+background-position: -95px -28px;
+}
+.img17txt {
+width: 341px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img18 {
+width: 452px;
+height: 255px;
+float: left;
+background-position: 0px -423px;
+background-size:cover;
+}
+.img18txt {
+width: 452px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img19 {
+width: 470px;
+height: 270px;
+float: right;
+background-position: 0 -878px;
+}
+.img19txt {
+width: 470px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img20 {
+width: 360px;
+height: 373px;
+float: left;
+margin-top: -99px;
+background-position: -69px -1278px;
+}
+.img20txt {
+width: 360px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img21 {
+width: 341px;
+height: 341px;
+float: right;
+background-position: -95px -28px;
+}
+.img21txt {
+width: 341px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img22 {
+width: 452px;
+height: 255px;
+float: left;
+background-position: 0px -423px;
+background-size:cover;
+}
+.img22txt {
+width: 452px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img23 {
+width: 470px;
+height: 270px;
+float: right;
+background-position: 0 -841px;
+}
+.img23txt {
+width: 470px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img24 {
+width: 360px;
+height: 373px;
+float: left;
+margin-top: -99px;
+background-position: -69px -1278px;
+}
+.img24txt {
+width: 360px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img25 {
+width: 341px;
+height: 341px;
+float: right;
+background-position: -95px -28px;
+}
+.img25txt {
+width: 341px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img26 {
+width: 452px;
+height: 255px;
+float: left;
+background-position: 0px -423px;
+background-size:cover;
+}
+.img26txt {
+width: 452px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img27 {
+width: 470px;
+height: 270px;
+float: right;
+background-position: 0 -841px;
+}
+.img27txt {
+width: 470px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img28 {
+width: 360px;
+height: 373px;
+float: left;
+margin-top: -99px;
+background-position: -69px -1278px;
+}
+.img28txt {
+width: 360px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img29 {
+width: 341px;
+height: 341px;
+float: right;
+background-position: -142px -28px;
+}
+.img29txt {
+width: 341px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img30 {
+width: 452px;
+height: 255px;
+float: left;
+background-position: 0px -520px;
+background-size:cover;
+}
+.img30txt {
+width: 452px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img31 {
+width: 470px;
+height: 270px;
+float: right;
+background-position: 0 -948px;
+}
+.img31txt {
+width: 470px;
+float: right;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.img32 {
+width: 360px;
+height: 373px;
+float: left;
+margin-top: -99px;
+background-position: -69px -1278px;
+}
+.img32txt {
+width: 360px;
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: rgb(221, 220, 220);
+background-color: rgb(245, 244, 244);
+border-top: 0;
+}
+.time-line-list li {
+position: relative;
+padding: 0px 0px 10px 10% !important;
+margin-left: 1% !important;
+float: left;
+width: 0;
+}
+.time-line-list li .current-month {
+left: 14.1% !important;
+}
+.selected-arrow-gr {
+left: 20.9% !important;
+}
+.blk-arrow-top {
+left: 20.6% !important;
+}
+.blk-arrow-btm {
+left: 20.5% !important;
+}
+}
+@media (min-width: 1280px) {
+.subHead {
+padding: 18px 0 0;
+font-size: 20px;
+width: 850px;
+margin: 0 auto;
+}
+.mainStory a h2 {
+padding: 0 100px;
+font-size: 30px;
+line-height: 30px;
+position: relative;
+}
+.substory div h2, .substory2 div h2 {
+font-size: 24px;
+line-height: 30px;
+padding: 20px;
+}
+.substory img, .substory2 img {
+width: 57%;
+}
+.social {
+left: 30px
+}
+.left100 {
+left: 100px;
+}
+.bannerTitle {
+padding: 20px 20px 20px 100px;
+width: 600px;
+font-size: 20px;
+bottom: 250px;
+left: 0;
+}
+.bannerTitle h1 {
+font-size: 32px;
+padding-bottom: 24px;
+}
+.storyContent P {
+padding: 30px 0 0;
+font-size: 20px;
+line-height: 30px;
+}
+.studentSec {
+width: 1150px;
+margin-left: auto;
+margin-right: auto;
+}
+p.studentTxt {
+padding: 0 0 40px !important;
+font-size: 20px;
+line-height: 32px;
+margin: 0 auto;
+}
+.studentSec {
+padding-top: 40px;
+}
+.studentSec h2 {
+font-size: 28px;
+margin-bottom: 30px;
+margin-top: 0;
+}
+.studentbg {
+background: url(http://www.hindustantimes.com/class-of-2018/images/studentbg.jpg) no-repeat 0 0/100%;
+padding-top: 200px;
+}
+.wid66 {
+float: left;
+width: 66.66%;
+}
+.wid33 {
+float: left;
+width: 33.33%;
+}
+.wid50 {
+float: left;
+width: 47%;
+}
+.wid66 a, .wid33 a {
+display: block;
+}
+.wid66 img, .wid33 img {
+max-width: 100%;
+}
+.mr20 {
+margin-right: 20px;
+}
+.ml20 {
+margin-left: 20px;
+}
+.mb20 {
+margin-bottom: 20px;
+}
+a.std1 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student1.jpg) no-repeat 0 0/100%;
+height: 305px;
+}
+a.std2 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student2.jpg) no-repeat 0 0/100%;
+height: 302px;
+}
+a.std3 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student3.jpg) no-repeat 0 0/100%;
+height: 302px;
+}
+a.std4 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student4.jpg) no-repeat 0 0/100%;
+height: 627px;
+}
+a.std5 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student5.jpg) no-repeat 0 0/100%;
+height: 302px;
+margin-bottom: 0;
+}
+a.std6 {
+background: url(http://www.hindustantimes.com/class-of-2018/images/student6.jpg) no-repeat 0 0/100%;
+height: 305px;
+}
+a.std1 span, a.std2 span, a.std3 span, a.std4 span, a.std5 span, a.std6 span {
+display: none;
+}
+a.std1 span em, a.std2 span em, a.std3 span em, a.std4 span em, a.std5 span em, a.std6 span em {
+font-style: normal;
+}
+a.std1:hover span, a.std2:hover span, a.std3:hover span, a.std4:hover span, a.std5:hover span, a.std6:hover span {
+display: table;
+text-align: center;
+color: #fff;
+text-decoration: none;
+background: url(http://www.hindustantimes.com/class-of-2018/images/headbg.png);
+width: 100%;
+height: 100%;
+}
+.tabShow {
+display: none;
+}
+.tabHide {
+display: block;
+}
+.mt40 {
+margin-top: 60px;
+}
+}
+@media (min-width: 1366px) {
+.substory img, .substory2 img {
+width: auto;
+}
+} /***timeline **/
+.story-timeline-containter {
+  width: 100%;
+  margin: 0;
+  height:100%;
+  position:relative;
+  font-family: Open Sans, sans-serif;
+  z-index:99;
+}
+.story-timelineinner {
+  background: #ebf2f7;
+  height: 153px;
+  padding: 14PX;
+  border-bottom: 1px dashed #2980b9;
+  border-top: 1px dashed #2980b9;
+}
+.story-timelineinner:before {
+  background: #2980b9;
+  content: "the journey";
+  width: 100px;
+  position: absolute;
+  left: 17%;
+  top: -28%;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 12px 5px;
+  text-align: center;
+}
+.time-line-list:before {
+  border: 1px solid transparent;
+  /*background-image: -moz-linear-gradient( 180deg, rgb(229,237,243) 22%, rgb(215,227,228) 28%, rgb(201,216,213) 43%, rgb(50,158,137) 100%);
+  background-image: -webkit-linear-gradient( 180deg, rgb(229,237,243) 22%, rgb(215,227,228) 28%, rgb(201,216,213) 43%, rgb(50,158,137) 100%);
+  background-image: -ms-linear-gradient( 180deg, rgb(229,237,243) 22%, rgb(215,227,228) 28%, rgb(201,216,213) 43%, rgb(50,158,137) 100%);*/
+  background:#329e89;
+  position: absolute;
+  top: 54px;
+  content: " ";
+  width: 100%;
+  height: 3px;
+  z-index: 0;
+  left: 9px;
+}
+.time-line-list {
+  position: relative;
+  float: left;
+  width: 1100px;
+  height: 100px;
+}
+.time-line-list li {
+  position: relative;
+  padding: 0px 0px 10px 117px;
+  margin-left: 25px;
+  float: left;
+  width: 11.5%;
+}
+.time-line-list li .circle-bx-solid {
+  position: absolute;
+  left: 17.3%;
+  bottom: -51px;
+  width: 10px;
+  height: 10px;
+  background: #464646;
+  border: 2px solid #464646;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+}
+.time-line-list li .circle-bx-solid a {
+  display: block;
+  width: 5px;
+  height: 7px;
+}
+.time-line-list li .current-month {
+  position: absolute;
+  left: 13.3%;
+  bottom: -56px;
+  width: 20px;
+  height: 20px;
+  background: #e9eef1;
+  border: 2px solid #329e89;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+}
+.circle {
+  position: absolute;
+  left: 18.8%;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  background: #329e89;
+  border: 2px solid #329e89;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+}
+.time-line-list li .post-date {
+  position: absolute;
+  left: -13%;
+  top: -3px;
+  width: 85px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.time-line-list li .post-date a {
+  display:block;
+  color: #666666;
+  text-decoration:none;
+}
+.time-line-list li .post-date a:hover {
+  color: #40a3d3;
+}
+.time-line-list li .text-head {
+  position: absolute;
+  left: -1%;
+  top: 79px;
+  width: 59px;
+  font-size: 14px;
+  color: #666666;
+  font-weight: 600;
+  text-align: center;
+}
+.time-line-list li .text-head a {
+  color: #666666;
+  text-decoration:none;
+}
+.time-line-list li .text-head a:hover {
+  color: #40a3d3;
+}
+.story-month {
+  color:#329e89;
+  font-size:14px;
+  font-weight:700;
+  display: block;
+  margin-top: 9px;
+  text-transform:uppercase;
+}
+.story-month a {
+  color:#329e89;
+  font-size:14px;
+  font-weight:700;
+  text-decoration:none;
+}
+.story-month a :hover {
+  text-decoration:none;
+}
+.time-line-list li.active .circle-bx {
+  background: #e01919;
+}
+.blk-arrow {
+  position: absolute;
+  left: 21%;
+  top: 31px;
+  height: 20px;
+  border: 1px solid #464646;
+}
+.blk-arrow-top {
+  position: absolute;
+  left: 20.7%;
+  top: 31px;
+  height: 20px;
+  border: 1px solid #464646;
+}
+.blk-arrow-btm {
+  position: absolute;
+  left: 20.1%;
+  top: 61px;
+  height: 20px;
+  border: 1px solid #45b29d;
+}
+.selected-arrow-gr {
+  position: absolute;
+  left: 21.8%;
+  top: 64px;
+  height: 20px;
+  border: 1px solid #45b29d;
+}
+.selected-arrow-top {
+  position: absolute;
+  left: 21.8%;
+  top: 28px;
+  height: 20px;
+  border: 1px solid #45b29d;
+}
+.mt10 {
+  margin-top:10px;
+}
+.opcity4 {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.opcity3 {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.opcity2 {
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.opcity1 {
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+.imgRes-map {
+  width: 100% !important;
+  margin: 30px auto 0 auto !important;
+  height:100% !important;
+}
+.imgRes-map img {
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:0 auto;
+}
+.imgRes-map p {
+  font-family: Open Sans !important;
+  color: #666;
+  font-size: 14px !important;
+  margin: 0;
+  padding: 0 !important;
+  line-height: 16px !important;
+}
+a.june-story {
+  position: relative;
+  top:-10px;
+  display: block;
+  height: 0;
+  width:0;
+}
+a.may-story {
+  position: relative;
+  top:-60px;
+  display: block;
+  height: 0;
+  width:0;
+}
+a span.lfttext:hover {
+  color:#40a3d3;
+}
+a span.txtRight:hover {
+  color:#40a3d3;
+}
+.timeline-box{ width:100%; overflow-x:auto; height:150px}

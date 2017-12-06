@@ -3,7 +3,151 @@
 	z-index: 11;
 }
 
-/*CHART*/
+/*TITLES*/
+.titles-wrapper {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.titles-wrapper h1 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+.titles-wrapper h2 {
+  margin: 0px;
+}
+.titles-wrapper h2.byline {
+  font-weight: normal;
+  font-size: 1em;
+}
+.titles-wrapper h2.dateline {
+  font-weight: normal;
+  font-size: 1em;
+}
+.titles-wrapper .img-container {
+  /*max-width: 80px;
+  margin: 10px auto;*/
+  display: none;
+}
+.titles-wrapper .img-container img {
+  max-width: 100%;
+}
+.blue-line {
+  width: 220px;
+  margin: .8em auto;
+  border: 2px solid #48a2d7;
+}
+
+.scroll-note {
+	color: #888;
+	font-style: italic;
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
+/*COPY*/
+.copy p.sub-head {
+	font-family: "Open Sans", sans-serif !important;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 40px;
+}
+
+#line, #line tspan, #grid {
+	-webkit-transition-property: all !important;
+  -webkit-transition-duration: 0.1s !important;
+  -webkit-transition-timing-function: step-end !important;
+  -webkit-transition-delay: initial !important;
+	transition-property: all !important;
+  transition-duration: 0.1s !important;
+  transition-timing-function: step-end !important;
+  transition-delay: initial !important;
+}
+
+/*LINE*/
+#line .chart, #line .chart-title, #line .chart-subtitle, #line .chart-source {
+	width: 100%;
+	max-width: 768px;
+	margin: auto;
+	display: table;
+	font-family: "Open Sans", sans-serif !important;
+}
+#line .chart-title {
+	font-weight: bold;
+	margin-bottom: 3px;
+	font-size: 1.2em;
+}
+#line .chart-subtitle {
+	font-size:.9em;
+}
+#line .chart-source {
+	font-size: .8em;
+	color: #888;
+}
+#line .line {
+	fill: none;
+	stroke: steelblue;
+	/*shape-rendering: crispEdges;*/
+	stroke-linecap: round;
+	stroke-width: 2px;
+}
+#line .dotted-line {
+	fill: none;
+	stroke: steelblue;
+	stroke-dasharray: 5,5;
+	/*shape-rendering: crispEdges;*/
+	stroke-width: 2px;
+}
+#line .dot {
+	fill: #fff;
+	stroke-width: 2px;
+}
+#line .axis .domain {
+	display: none;
+}
+#line .axis text {
+	font-family: "Open Sans", sans-serif;
+}
+#line .axis-label {
+	font-size: .8em;
+}
+#line .annotation {
+	font-family: "Open Sans", sans-serif;	
+	font-size: .8em;
+	text-shadow: -1px -1px 1px #ffffff, -1px 0px 1px #ffffff, -1px 1px 1px #ffffff, 0px -1px 1px #ffffff, 0px 1px 1px #ffffff, 1px -1px 1px #ffffff, 1px 0px 1px #ffffff, 1px 1px 1px #ffffff;
+}
+#line .annotation-note-title {
+	/*fill: #000;*/
+}
+#line .annotation-note-label {
+	font-size: .9em;
+}
+#line .annotation.middle {
+	text-anchor: middle;
+}
+#line .annotation.start {
+	text-anchor: start;
+}
+#line .annotation.end {
+	text-anchor: end;
+}
+#line .dot-label, #line .line-label {
+	text-shadow: -1px -1px 1px #ffffff, -1px 0px 1px #ffffff, -1px 1px 1px #ffffff, 0px -1px 1px #ffffff, 0px 1px 1px #ffffff, 1px -1px 1px #ffffff, 1px 0px 1px #ffffff, 1px 1px 1px #ffffff;
+}
+#line .dot-label {
+	font-size: .66em;
+}
+#line .line-label {
+	font-size: .8em;
+}
+
+
+/*GRID*/
 #scroll .chart {
 	margin: 0 auto;
 	display:table;
@@ -51,6 +195,9 @@
   font-size: 1.5em;
   line-height: 1.7em;
 }
+#scroll .scroll-text .step p b {
+	font-family: "PT Serif", serif;
+}
 #scroll .scroll-text .step.is-active p {
 	color: #000;
 }
@@ -66,6 +213,12 @@
 	#scroll .scroll-text .step p {
 		font-size: 1.1em;
 	}	
+
+	#line .chart-title, #line .chart-subtitle, #line .chart-source {
+		width: auto;
+		padding: 0px 15px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */

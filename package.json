@@ -1,0 +1,24 @@
+{
+  "name": "teacher-vacancies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HindustanTimesLabs/teacher-vacancies.git"
+  },
+  "author": "Harry Stevens <harryjosephstevens@gmail.com> (http://harryjstevens.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HindustanTimesLabs/teacher-vacancies/issues"
+  },
+  "homepage": "https://github.com/HindustanTimesLabs/teacher-vacancies#readme",
+  "dependencies": {
+    "indian-ocean": "^3.0.2",
+    "jeezy": "^1.12.9",
+    "moment": "^2.19.3"
+  }
+}
