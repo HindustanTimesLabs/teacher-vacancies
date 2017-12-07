@@ -61,6 +61,10 @@
 .copy p a, .copy p em {
 	font-family: "PT Serif", serif !important;
 }
+.copy p.contrib {
+	font-family: "PT Serif", serif !important;
+	font-style: italic;	
+}
 
 #line, #line tspan, #grid {
 	-webkit-transition-property: all !important;
