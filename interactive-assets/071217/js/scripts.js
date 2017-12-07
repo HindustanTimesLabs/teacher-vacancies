@@ -80,7 +80,7 @@ function makeLine(){
 		.defined(function(d){ return d.value !== 0; });
 
 
-	d3.json("data/line_data.json", function(error, data){
+	d3.json("interactive-assets/071217/data/line_data.json", function(error, data){
 
 		// update scales
 		var first_data = data[0].data;

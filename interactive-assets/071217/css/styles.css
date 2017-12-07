@@ -58,6 +58,10 @@
 	margin-top: 40px;
 }
 
+.copy p a, .copy p em {
+	font-family: "PT Serif", serif !important;
+}
+
 #line, #line tspan, #grid {
 	-webkit-transition-property: all !important;
   -webkit-transition-duration: 0.1s !important;
